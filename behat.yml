@@ -1,0 +1,12 @@
+default:
+  suites:
+    default:
+      contexts:
+        - FeatureContext
+        - Behat\MinkExtension\Context\MinkContext
+
+  extensions:
+    Behat\MinkExtension:
+      base_url: http://docker.for.mac.localhost:8081/
+      goutte: ~
+      selenium2: ~
